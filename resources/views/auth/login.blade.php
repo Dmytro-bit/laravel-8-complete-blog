@@ -61,7 +61,7 @@
                     </div>
 
                     <div class="flex flex-wrap">
-                        <a href="{{ route('login.google') }}" class="btn btn-primary bg-red-500 text-white py-2 px-4 rounded">Login with Google</a>
+                        <a href="{{ route('login.google') }}" class="btn btn-primary bg-red-500 text-white py-2 px-4 rounded w-full text-center mb-4">Login with Google</a>
                         <button type="submit"
                         class="w-full select-none font-bold whitespace-no-wrap p-3 rounded-lg text-base leading-normal no-underline text-gray-100 bg-blue-500 hover:bg-blue-700 sm:py-4">
                             {{ __('Login') }}
