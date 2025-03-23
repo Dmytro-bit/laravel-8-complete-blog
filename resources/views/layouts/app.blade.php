@@ -26,7 +26,9 @@
                 </a>
             </div>
             <nav class="space-x-4 text-gray-300 text-sm sm:text-base">
+                <a href="{{ url('/blog') }}" class="no-underline hover:underline">Posts</a>
                 <a href="{{ url('/about-us') }}" class="no-underline hover:underline">About Us</a>
+                <a href="{{ url('/contact-us') }}" class="no-underline hover:underline">Contact Us</a>
                 @guest
                     <a class="no-underline hover:underline" href="{{ route('login') }}">{{ __('Login') }}</a>
                 @else
