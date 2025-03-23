@@ -5,7 +5,7 @@
         <h1 class="text-4xl font-bold py-10">
             About Us
         </h1>
-        <p class="m-auto w-4/5 text-gray-500">
+        <p class="m-auto w-4/5 text-gray-500 text-lg leading-relaxed">
             Welcome to our About Us page. Here you can learn more about our mission, values, and the team behind our
             success.
         </p>
@@ -14,7 +14,7 @@
     <div class="sm:grid grid-cols-2 w-4/5 m-auto my-4 bg-gray-200 p-6 rounded-lg">
         <div class="mr-4">
             <h2 class="text-2xl font-bold mb-4">Welcome to PyHub!</h2>
-            <p class="text-black">
+            <p class="text-black text-lg leading-relaxed">
                 PyHub is your friendly gateway to the exciting world of Python programming. Whether you're brand new to
                 coding or looking to sharpen your skills, we're here to guide you through simple, clear, and enjoyable
                 tutorials. Our mission is to break down complex concepts into easy-to-follow lessons, empowering
@@ -32,7 +32,7 @@
         </div>
         <div class="ml-4">
             <h2 class="text-2xl font-bold mb-4">Why Learn Python with Us?</h2>
-            <p class="text-black">
+            <p class="text-black text-lg leading-relaxed">
                 At PyHub, we believe that learning to code should be approachable and fun. Our blog offers
                 step-by-step guides, practical examples, and interactive exercises designed specifically for beginners.
                 We focus on helping you understand core Python concepts clearly, enabling you to quickly turn ideas into
