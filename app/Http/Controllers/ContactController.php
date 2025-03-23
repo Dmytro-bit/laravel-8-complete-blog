@@ -22,7 +22,7 @@ class ContactController extends Controller
         ]);
 
         Mail::send([], [], function ($message) use ($request) {
-            $message->to('your-email@example.com')
+            $message->to('contact@pyhub.com')
                 ->subject($request->input('subject'))
                 ->setBody('Name: ' . $request->input('name') . "\n\n" . 'Message: ' . $request->input('message'), 'text/plain');
         });
