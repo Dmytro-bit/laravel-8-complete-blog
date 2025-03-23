@@ -10,4 +10,9 @@ class PagesController extends Controller
     {
         return view('index');
     }
+
+    public function about_us()
+    {
+        return view('about_us');
+    }
 }
