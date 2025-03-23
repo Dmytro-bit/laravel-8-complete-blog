@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\PostsController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\Auth\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,3 +28,9 @@ Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->nam
 Route::get('/about-us', [App\Http\Controllers\PagesController::class, 'about_us']);
 Route::get('/profile', [UserController::class, 'showProfile'])->name('profile');
 Route::put('/profile', [UserController::class, 'updateProfile'])->name('profile.update');
+
+Route::get('/contact-us', [ContactController::class, 'showContactForm'])->name('contact.show');
+Route::post('/contact-us', [ContactController::class, 'submitContactForm'])->name('contact.submit');
+
+Route::get('auth/google', [LoginController::class, 'redirectToGoogle'])->name('login.google');
+Route::get('login/google/callback', [LoginController::class, 'handleGoogleCallback']);
