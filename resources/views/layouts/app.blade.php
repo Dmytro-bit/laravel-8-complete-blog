@@ -18,7 +18,7 @@
 </head>
 <body class="bg-gray-100 h-screen antialiased leading-none font-sans">
 <div id="app">
-    <header class="bg-blue-900 py-6">
+    <header class="bg-green-600 py-6">
         <div class="container mx-auto flex justify-between items-center px-6">
             <div>
                 <a href="{{ url('/') }}" class="text-lg font-semibold text-gray-100 no-underline">
@@ -30,7 +30,7 @@
                 @guest
                     <a class="no-underline hover:underline" href="{{ route('login') }}">{{ __('Login') }}</a>
                 @else
-                    <span>{{ Auth::user()->name }}</span>
+                    <span><a href="{{ url('/profile') }}">Profile</a></span>
 
                     <a href="{{ route('logout') }}"
                        class="no-underline hover:underline"
