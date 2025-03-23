@@ -4,6 +4,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Post;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 
@@ -12,7 +13,8 @@ class UserController extends Controller
     public function showProfile()
     {
         $user = auth()->user();
-        return view('user.profile', compact('user'));
+        $posts = Post::where('user_id', auth()->id())->get();
+        return view('user.profile', compact('user', 'posts'));
     }
 
     public function updateProfile(Request $request)

@@ -11,11 +11,11 @@
         </p>
     </div>
 
-    <div class="sm:grid grid-cols-2 w-4/5 m-auto py-10">
+    <div class="sm:grid grid-cols-2 w-4/5 m-auto my-4 bg-gray-200 p-6 rounded-lg">
         <div class="mr-4">
             <h2 class="text-2xl font-bold mb-4">Welcome to PyHub!</h2>
             <p class="text-black">
-                PyHub s your friendly gateway to the exciting world of Python programming. Whether you're brand new to
+                PyHub is your friendly gateway to the exciting world of Python programming. Whether you're brand new to
                 coding or looking to sharpen your skills, we're here to guide you through simple, clear, and enjoyable
                 tutorials. Our mission is to break down complex concepts into easy-to-follow lessons, empowering
                 beginners like you to build confidence and succeed in Python.
@@ -26,7 +26,7 @@
         </div>
     </div>
 
-    <div class="sm:grid grid-cols-2 w-4/5 m-auto py-10">
+    <div class="sm:grid grid-cols-2 w-4/5 m-auto my-4 bg-gray-200 p-6 rounded-lg">
         <div>
             <img src="{{ asset('images/python.webp') }}" alt="About Us Image 2" class="rounded-lg">
         </div>

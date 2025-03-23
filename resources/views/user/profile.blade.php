@@ -37,13 +37,13 @@
         </form>
 
         <h3 class="text-3xl font-semibold mt-8 mb-4">User's Posts</h3>
-        @if($user->post->count())
-            @foreach($user->post as $post)
+        @if($posts->count())
+            @foreach($posts as $post)
                 <div class="card mb-3 mx-auto w-1/2 bg-green-100 rounded-lg p-6">
                     <div class="card-body">
                         <h5 class="text-xl font-bold">{{ $post->title }}</h5>
                         <p>{{ Str::limit($post->content, 150) }}</p>
-                        <a href="{{ route('posts.show', $post->id) }}" class="text-blue-500">Read more</a>
+                        <a href="/blog/{{ $post->slug }}" class="text-blue-500">Read more</a>
                     </div>
                 </div>
             @endforeach
