@@ -12,13 +12,13 @@
     </div>
 
     <div class="sm:grid grid-cols-2 w-4/5 m-auto py-10">
-        <div class="flex items-center mr-4">
+        <div class="mr-4">
+            <h2 class="text-2xl font-bold mb-4">Welcome to PyHub!</h2>
             <p class="text-black">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum
+                PyHub s your friendly gateway to the exciting world of Python programming. Whether you're brand new to
+                coding or looking to sharpen your skills, we're here to guide you through simple, clear, and enjoyable
+                tutorials. Our mission is to break down complex concepts into easy-to-follow lessons, empowering
+                beginners like you to build confidence and succeed in Python.
             </p>
         </div>
         <div>
@@ -30,13 +30,13 @@
         <div>
             <img src="{{ asset('images/python.webp') }}" alt="About Us Image 2" class="rounded-lg">
         </div>
-        <div class="flex items-center ml-4">
+        <div class="ml-4">
+            <h2 class="text-2xl font-bold mb-4">Why Learn Python with Us?</h2>
             <p class="text-black">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum
+                At PyHub, we believe that learning to code should be approachable and fun. Our blog offers
+                step-by-step guides, practical examples, and interactive exercises designed specifically for beginners.
+                We focus on helping you understand core Python concepts clearly, enabling you to quickly turn ideas into
+                real-world projects. Join us, and let's embark on your Python journey together!
             </p>
         </div>
     </div>
