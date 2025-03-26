@@ -14,23 +14,23 @@
             @csrf
 
             <div class="form-group mb-4">
-                <label for="name" class="block text-left">Name</label>
-                <input type="text" name="name" class="form-control w-full" value="{{ old('name') }}" required>
+                <label for="name" class="block text-left mb-2 text-lg">Name</label>
+                <input type="text" name="name" class="form-control w-full text-lg p-2" value="{{ old('name') }}" required>
             </div>
 
             <div class="form-group mb-4">
-                <label for="email" class="block text-left">Email</label>
-                <input type="email" name="email" class="form-control w-full" value="{{ old('email') }}" required>
+                <label for="email" class="block text-left mb-2 text-lg">Email</label>
+                <input type="email" name="email" class="form-control w-full text-lg p-2" value="{{ old('email') }}" required>
             </div>
 
             <div class="form-group mb-4">
-                <label for="subject" class="block text-left">Subject</label>
-                <input type="text" name="subject" class="form-control w-full" value="{{ old('subject') }}" required>
+                <label for="subject" class="block text-left mb-2 text-lg">Subject</label>
+                <input type="text" name="subject" class="form-control w-full text-lg p-2" value="{{ old('subject') }}" required>
             </div>
 
             <div class="form-group mb-4">
-                <label for="message" class="block text-left">Message</label>
-                <textarea name="message" class="form-control w-full" rows="5" required>{{ old('message') }}</textarea>
+                <label for="message" class="block text-left mb-2 text-lg">Message</label>
+                <textarea name="message" class="form-control w-full text-lg p-2" rows="5" required>{{ old('message') }}</textarea>
             </div>
 
             <button type="submit" class="btn btn-primary bg-blue-500 text-white py-2 px-4 rounded">Send Message</button>
