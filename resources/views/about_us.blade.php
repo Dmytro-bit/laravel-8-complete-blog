@@ -13,7 +13,7 @@
 
     <div class="sm:grid grid-cols-2 w-4/5 m-auto my-4 bg-gray-200 p-6 rounded-lg">
         <div class="mr-4">
-            <h2 class="text-2xl font-bold mb-4">Welcome to PyHub!</h2>
+            <h2 class="text-2xl font-bold mb-6">Welcome to PyHub!</h2>
             <p class="text-black text-lg leading-relaxed">
                 PyHub is your friendly gateway to the exciting world of Python programming. Whether you're brand new to
                 coding or looking to sharpen your skills, we're here to guide you through simple, clear, and enjoyable
@@ -31,7 +31,7 @@
             <img src="{{ asset('images/python.webp') }}" alt="About Us Image 2" class="rounded-lg">
         </div>
         <div class="ml-4">
-            <h2 class="text-2xl font-bold mb-4">Why Learn Python with Us?</h2>
+            <h2 class="text-2xl font-bold mb-6">Why Learn Python with Us?</h2>
             <p class="text-black text-lg leading-relaxed">
                 At PyHub, we believe that learning to code should be approachable and fun. Our blog offers
                 step-by-step guides, practical examples, and interactive exercises designed specifically for beginners.
