@@ -27,20 +27,23 @@
 
 
 
-            <div class="bg-gray-200 p-6 rounded-lg ">
+            <div class="bg-gray-200 p-6 rounded-lg ml-4">
                 <h2 class="text-4xl">Comments</h2>
-                @foreach ($post->comments as $comment)
-                    <div class="mt-4 bg-gray-300 p-4 rounded">
-                        <p><strong class="text-blue-800">{{ $comment->user->name }}</strong></p>
-                        <p class="mt-2">{{ $comment->body }}</p>
-                    </div>
-                @endforeach
+                @if ($post->comments->isEmpty())
+                    <p class="mt-4 text-gray-600">No comments yet</p>
+                @else
+                    @foreach ($post->comments as $comment)
+                        <div class="mt-4 bg-gray-300 p-4 rounded">
+                            <p><strong class="text-blue-800">{{ $comment->user->name }}</strong></p>
+                            <p class="mt-2">{{ $comment->body }}</p>
+                        </div>
+                    @endforeach
+                @endif
                 @if (Auth::check())
                     <form action="/comments" method="POST" class="mt-4">
                         @csrf
                         <input type="hidden" name="post_id" value="{{ $post->id }}">
-                        <textarea name="body" class="w-full h-20 p-2 border rounded"
-                                  placeholder="Add a comment..."></textarea>
+                        <textarea name="body" class="w-full h-20 p-2 border rounded" placeholder="Add a comment..."></textarea>
                         <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded mt-2">Submit</button>
                     </form>
                 @endif
