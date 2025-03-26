@@ -7,22 +7,22 @@
 
             <ul class="flex space-x-4 py-4 sm:text-s pt-4 text-gray-400">
                 <li>
-                    <a href="/">
+                    <a href="#">
                         What we do
                     </a>
                 </li>
                 <li>
-                    <a href="/">
+                    <a href="#">
                         Address
                     </a>
                 </li>
                 <li>
-                    <a href="/">
+                    <a href="#">
                         Phone
                     </a>
                 </li>
                 <li>
-                    <a href="/">
+                    <a href="#">
                         Contact
                     </a>
                 </li>

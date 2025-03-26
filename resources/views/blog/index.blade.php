@@ -33,7 +33,7 @@
                 <img src="{{ asset('images/' . $post->image_path) }}" alt=""
                      class="w-5/6 h-full object-cover rounded-lg">
             </div>
-            <div>
+            <div class="pr-4">
                 <h2 class="text-gray-700 font-bold text-5xl pb-4">
                     {{ $post->title }}
                 </h2>
@@ -42,7 +42,7 @@
             By <span class="font-bold italic text-gray-800">{{ $post->user->name }}</span>, Created on {{ date('jS M Y', strtotime($post->updated_at)) }}
         </span>
 
-                <p class="text-xl text-gray-700 pt-8 pb-10 leading-8 font-light">
+                <p class="text-xl text-gray-700 pt-8 pb-10 leading-8 font-light pr-4">
                     {{ $post->description }}
                 </p>
 
@@ -53,22 +53,22 @@
 
                 @if (isset(Auth::user()->id) && Auth::user()->id == $post->user_id)
                     <span class="float-right mr-4">
-                        <a href="/blog/{{ $post->slug }}/edit"
-                           class="text-gray-700 italic hover:text-gray-900 pb-1 border-b-2">
-                            Edit
-                        </a>
-                    </span>
+                <a href="/blog/{{ $post->slug }}/edit"
+                   class="text-gray-700 italic hover:text-gray-900 pb-1 border-b-2">
+                    Edit
+                </a>
+            </span>
 
                     <span class="float-right">
-                        <form action="/blog/{{ $post->slug }}" method="POST">
-                            @csrf
-                            @method('delete')
+                <form action="/blog/{{ $post->slug }}" method="POST">
+                    @csrf
+                    @method('delete')
 
-                            <button class="text-red-500 pr-3" type="submit">
-                                Delete
-                            </button>
-                        </form>
-                    </span>
+                    <button class="text-red-500 pr-3" type="submit">
+                        Delete
+                    </button>
+                </form>
+            </span>
                 @endif
             </div>
         </div>
