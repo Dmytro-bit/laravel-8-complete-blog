@@ -32,7 +32,7 @@
                     <img src="{{ asset('images/' . $post->image_path) }}" alt="{{ $post->title }}" class="w-full h-32 object-cover mb-4 rounded">
                     <h3 class="text-2xl font-bold mb-2">{{ $post->title }}</h3>
                     <p class="text-gray-700 mb-4">{{ Str::limit($post->description, 100) }}</p>
-                    <a href="/blog/{{ $post->id }}" class="text-blue-500">Read More</a>
+                    <a href="/blog/{{ $post->slug }}" class="text-blue-500">Read More</a>
                 </div>
             @endforeach
         </div>
